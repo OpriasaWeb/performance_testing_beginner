@@ -10,15 +10,17 @@ A Logic Controller defines the flow or logic of your test execution within a Thr
 Think of it like programming control structures (if, loop, switch, etc.) — but in JMeter's drag-and-drop interface.
 
 🧰 Types of Logic Controllers (with simple use cases)
-Logic Controller	What it Does	Example Use Case
-Loop Controller	Repeats its child samplers a number of times	Repeat login request 5 times
-If Controller	Runs its child samplers only if a condition is true	Run step only if user is admin
-While Controller	Runs its children while a condition is true	Keep polling API until status is "DONE"
-Switch Controller	Runs only one child based on index or condition	Simulate different user flows
-Random Controller	Randomly picks one of its children to execute	Random page visits
-Interleave Controller	Rotates through each child on each loop iteration	Alternate between login and search
-Once Only Controller	Runs its children only once per thread, even if loop count is >1	Do login only once per virtual user
-Transaction Controller	Groups requests and reports their combined time	Measure login + dashboard load time as one transaction
+| Logic Controller           | What it Does                                                         | Example Use Case                                       |
+| -------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Loop Controller**        | Repeats its child samplers a number of times                         | Repeat login request 5 times                           |
+| **If Controller**          | Runs its child samplers **only if** a condition is true              | Run step only if user is admin                         |
+| **While Controller**       | Runs its children **while a condition** is true                      | Keep polling API until status is "DONE"                |
+| **Switch Controller**      | Runs **only one** child based on index or condition                  | Simulate different user flows                          |
+| **Random Controller**      | Randomly picks one of its children to execute                        | Random page visits                                     |
+| **Interleave Controller**  | Rotates through each child on each loop iteration                    | Alternate between login and search                     |
+| **Once Only Controller**   | Runs its children **only once per thread**, even if loop count is >1 | Do login only once per virtual user                    |
+| **Transaction Controller** | Groups requests and reports their combined time                      | Measure login + dashboard load time as one transaction |
+
 
 ✅ Where Do You Add Logic Controllers?
 Inside a Thread Group:
