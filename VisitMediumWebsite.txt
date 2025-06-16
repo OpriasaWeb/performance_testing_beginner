@@ -1,0 +1,157 @@
+line 1 column 38 - Warning: unknown attribute "data-rh"
+line 1 column 99 - Warning: unknown attribute "data-rh"
+line 1 column 99 - Warning: meta lacks "content" attribute
+line 1 column 137 - Warning: unknown attribute "data-rh"
+line 1 column 252 - Warning: unknown attribute "data-rh"
+line 1 column 311 - Warning: unknown attribute "data-rh"
+line 1 column 381 - Warning: unknown attribute "data-rh"
+line 1 column 452 - Warning: unknown attribute "property"
+line 1 column 452 - Warning: unknown attribute "data-rh"
+line 1 column 518 - Warning: unknown attribute "property"
+line 1 column 518 - Warning: unknown attribute "data-rh"
+line 1 column 591 - Warning: unknown attribute "property"
+line 1 column 591 - Warning: unknown attribute "data-rh"
+line 1 column 671 - Warning: unknown attribute "property"
+line 1 column 671 - Warning: unknown attribute "data-rh"
+line 1 column 741 - Warning: unknown attribute "property"
+line 1 column 741 - Warning: unknown attribute "data-rh"
+line 1 column 810 - Warning: unknown attribute "data-rh"
+line 1 column 958 - Warning: unknown attribute "data-rh"
+line 1 column 1,017 - Warning: unknown attribute "data-rh"
+line 1 column 1,094 - Warning: unknown attribute "data-rh"
+line 1 column 1,248 - Warning: unknown attribute "data-rh"
+line 1 column 1,320 - Warning: unknown attribute "data-rh"
+line 1 column 1,383 - Warning: unknown attribute "data-rh"
+line 1 column 1,545 - Warning: unknown attribute "data-rh"
+line 1 column 1,702 - Warning: unknown attribute "data-rh"
+line 1 column 1,762 - Warning: unknown attribute "data-rh"
+line 1 column 1,847 - Warning: unknown attribute "property"
+line 1 column 1,847 - Warning: unknown attribute "data-rh"
+line 1 column 2,008 - Warning: unknown attribute "property"
+line 1 column 2,008 - Warning: unknown attribute "data-rh"
+line 1 column 2,160 - Warning: unknown attribute "property"
+line 1 column 2,160 - Warning: unknown attribute "data-rh"
+line 1 column 2,223 - Warning: unknown attribute "property"
+line 1 column 2,223 - Warning: unknown attribute "data-rh"
+line 1 column 2,307 - Warning: unknown attribute "property"
+line 1 column 2,307 - Warning: unknown attribute "data-rh"
+line 1 column 2,366 - Warning: unknown attribute "property"
+line 1 column 2,366 - Warning: unknown attribute "data-rh"
+line 1 column 2,435 - Warning: unknown attribute "data-rh"
+line 1 column 2,567 - Warning: unknown attribute "data-rh"
+line 1 column 2,678 - Warning: unknown attribute "sizes"
+line 1 column 2,678 - Warning: unknown attribute "data-rh"
+line 1 column 2,858 - Warning: unknown attribute "sizes"
+line 1 column 2,858 - Warning: unknown attribute "data-rh"
+line 1 column 3,038 - Warning: unknown attribute "sizes"
+line 1 column 3,038 - Warning: unknown attribute "data-rh"
+line 1 column 3,216 - Warning: unknown attribute "sizes"
+line 1 column 3,216 - Warning: unknown attribute "data-rh"
+line 1 column 3,394 - Warning: unknown attribute "data-rh"
+line 1 column 3,533 - Warning: unknown attribute "crossorigin"
+line 1 column 3,533 - Warning: unknown attribute "data-rh"
+line 1 column 3,619 - Warning: unknown attribute "data-rh"
+line 1 column 3,678 - Warning: unknown attribute "as"
+line 1 column 3,678 - Warning: unknown attribute "data-rh"
+line 1 column 3,813 - Warning: unknown attribute "data-rh"
+line 1 column 3,932 - Warning: unknown attribute "data-rh"
+line 1 column 3,996 - Warning: unknown attribute "data-rh"
+line 1 column 4,541 - Warning: unknown attribute "data-fela-type"
+line 1 column 4,541 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 14 - Warning: unknown attribute "data-fela-type"
+line 42 column 14 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 330 - Warning: unknown attribute "data-fela-type"
+line 42 column 330 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 3,675 - Warning: unknown attribute "data-fela-type"
+line 42 column 3,675 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 3,922 - Warning: unknown attribute "data-fela-type"
+line 42 column 3,922 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 4,063 - Warning: unknown attribute "data-fela-type"
+line 42 column 4,063 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 4,203 - Warning: unknown attribute "data-fela-type"
+line 42 column 4,203 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 4,343 - Warning: unknown attribute "data-fela-type"
+line 42 column 4,343 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 4,547 - Warning: unknown attribute "data-fela-type"
+line 42 column 4,547 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 4,820 - Warning: unknown attribute "data-fela-type"
+line 42 column 4,820 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 5,092 - Warning: unknown attribute "data-fela-type"
+line 42 column 5,092 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 5,344 - Warning: unknown attribute "data-fela-type"
+line 42 column 5,344 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 5,493 - Warning: unknown attribute "data-fela-type"
+line 42 column 5,493 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 5,673 - Warning: unknown attribute "data-fela-type"
+line 42 column 5,673 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 5,871 - Warning: unknown attribute "data-fela-type"
+line 42 column 5,871 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 6,070 - Warning: unknown attribute "data-fela-type"
+line 42 column 6,070 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 6,270 - Warning: unknown attribute "data-fela-type"
+line 42 column 6,270 - Warning: unknown attribute "data-fela-rehydration"
+line 42 column 6,645 - Warning: trimming empty <div>
+line 42 column 6,655 - Warning: <script> lacks "type" attribute
+line 42 column 6,897 - Warning: unknown attribute "data-discover"
+line 42 column 7,005 - Error: <svg> is not recognized!
+line 42 column 7,005 - Warning: discarding unexpected <svg>
+line 42 column 7,160 - Error: <desc> is not recognized!
+line 42 column 7,160 - Warning: discarding unexpected <desc>
+line 42 column 7,203 - Warning: discarding unexpected </desc>
+line 42 column 7,210 - Error: <path> is not recognized!
+line 42 column 7,210 - Warning: discarding unexpected <path>
+line 42 column 10,169 - Warning: discarding unexpected </path>
+line 42 column 10,176 - Warning: discarding unexpected </svg>
+line 42 column 10,211 - Warning: trimming empty <div>
+line 42 column 10,311 - Warning: unknown attribute "data-discover"
+line 42 column 10,534 - Warning: unknown attribute "data-discover"
+line 42 column 10,758 - Warning: unknown attribute "data-discover"
+line 42 column 11,123 - Warning: unknown attribute "data-discover"
+line 42 column 11,419 - Warning: unknown attribute "data-discover"
+line 42 column 11,827 - Warning: trimming empty <div>
+line 42 column 11,955 - Warning: unknown attribute "loading"
+line 42 column 12,202 - Warning: missing </span> before <h2>
+line 42 column 12,202 - Warning: trimming empty <span>
+line 42 column 12,265 - Warning: discarding unexpected </span>
+line 42 column 12,914 - Warning: unknown attribute "data-discover"
+line 42 column 13,554 - Warning: trimming empty <div>
+line 42 column 13,775 - Warning: missing </a> before <p>
+line 42 column 13,804 - Warning: discarding unexpected </a>
+line 42 column 13,954 - Warning: missing </a> before <p>
+line 42 column 13,985 - Warning: discarding unexpected </a>
+line 42 column 14,021 - Warning: unknown attribute "data-discover"
+line 42 column 14,145 - Warning: missing </a> before <p>
+line 42 column 14,175 - Warning: discarding unexpected </a>
+line 42 column 14,211 - Warning: unknown attribute "data-discover"
+line 42 column 14,361 - Warning: missing </a> before <p>
+line 42 column 14,393 - Warning: discarding unexpected </a>
+line 42 column 14,547 - Warning: missing </a> before <p>
+line 42 column 14,577 - Warning: discarding unexpected </a>
+line 42 column 14,722 - Warning: missing </a> before <p>
+line 42 column 14,751 - Warning: discarding unexpected </a>
+line 42 column 14,933 - Warning: missing </a> before <p>
+line 42 column 14,965 - Warning: discarding unexpected </a>
+line 42 column 15,138 - Warning: missing </a> before <p>
+line 42 column 15,168 - Warning: discarding unexpected </a>
+line 42 column 15,352 - Warning: missing </a> before <p>
+line 42 column 15,382 - Warning: discarding unexpected </a>
+line 42 column 15,529 - Warning: missing </a> before <p>
+line 42 column 15,568 - Warning: discarding unexpected </a>
+line 42 column 15,630 - Warning: <script> lacks "type" attribute
+line 42 column 15,706 - Warning: <script> lacks "type" attribute
+line 42 column 15,784 - Warning: <script> lacks "type" attribute
+line 42 column 31,365 - Warning: <script> lacks "type" attribute
+line 42 column 31,484 - Warning: <script> lacks "type" attribute
+line 42 column 31,588 - Warning: <script> lacks "type" attribute
+line 42 column 31,683 - Warning: <script> lacks "type" attribute
+line 42 column 31,774 - Warning: <script> lacks "type" attribute
+line 42 column 31,865 - Warning: <script> lacks "type" attribute
+line 43 column 1 - Warning: <script> lacks "type" attribute
+line 44 column 1 - Warning: <script> lacks "type" attribute
+line 44 column 122 - Warning: <script> lacks "type" attribute
+line 44 column 159 - Warning: <script> lacks "type" attribute
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+149 warnings, 3 errors were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.

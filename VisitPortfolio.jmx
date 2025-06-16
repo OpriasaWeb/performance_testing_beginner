@@ -5,9 +5,11 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Visit Own Portfolio" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Visit Own Portfolio">
         <stringProp name="TestPlan.comments">Visit Own Portfolio and use some of the logic controllers</stringProp>
         <intProp name="ThreadGroup.num_threads">10</intProp>
         <intProp name="ThreadGroup.ramp_time">2</intProp>
@@ -19,7 +21,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Main Page">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Main Page" enabled="true">
           <stringProp name="HTTPSampler.domain">opriasaweb.github.io</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">opriasa-de-portfolio/</stringProp>
@@ -32,7 +34,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion">
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
             <stringProp name="DurationAssertion.duration">2000</stringProp>
           </DurationAssertion>
           <hashTree/>
@@ -99,7 +101,7 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -136,7 +138,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -173,7 +175,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
             <stringProp name="49586">200</stringProp>
           </collectionProp>
@@ -186,7 +188,7 @@
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Visit Medium Website">
         <intProp name="ThreadGroup.num_threads">10</intProp>
-        <intProp name="ThreadGroup.ramp_time">5</intProp>
+        <intProp name="ThreadGroup.ramp_time">10</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -224,6 +226,21 @@
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion">
+              <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
+              <stringProp name="SizeAssertion.size">40000</stringProp>
+              <intProp name="SizeAssertion.operator">3</intProp>
+            </SizeAssertion>
+            <hashTree/>
+            <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML Assertion">
+              <longProp name="html_assertion_error_threshold">9</longProp>
+              <longProp name="html_assertion_warning_threshold">150</longProp>
+              <stringProp name="html_assertion_doctype">omit</stringProp>
+              <boolProp name="html_assertion_errorsonly">false</boolProp>
+              <longProp name="html_assertion_format">0</longProp>
+              <stringProp name="html_assertion_filename">C:\Users\Jeremy Opriasa\Desktop\CODING FILES\Performance Testing\Beginner level\VisitMediumWebsite.txt</stringProp>
+            </HTMLAssertion>
             <hashTree/>
             <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -264,6 +281,43 @@
             <hashTree/>
           </hashTree>
         </hashTree>
+        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
@@ -338,7 +392,141 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\Jeremy Opriasa\Desktop\CODING FILES\Performance Testing\Beginner level\VisitPortfolio.jmx</stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\Jeremy Opriasa\Desktop\CODING FILES\Performance Testing\Beginner level\Test.csv</stringProp>
+        </ResultCollector>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
+1750081969873,464,HTTP Request,200,OK,Visit Medium Website 2-1,text,true,,41664,224,1,4,https://medium.com/,211,0,134
+1750081969873,211,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-1,text,true,,656,112,1,4,http://medium.com/,211,0,134
+1750081970085,252,HTTP Request-1,200,OK,Visit Medium Website 2-1,text,true,,41008,112,1,4,https://medium.com/,249,0,129
+1750081970340,158,HTTP Request,200,OK,Visit Medium Website 2-1,text,true,,41681,224,1,5,https://medium.com/,79,0,0
+1750081970340,79,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-1,text,true,,656,112,1,5,http://medium.com/,79,0,0
+1750081970419,79,HTTP Request-1,200,OK,Visit Medium Website 2-1,text,true,,41025,112,1,5,https://medium.com/,77,0,0
+1750081970875,366,HTTP Request,200,OK,Visit Medium Website 2-2,text,true,,41679,224,1,8,https://medium.com/,119,0,46
+1750081970875,119,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-2,text,true,,656,112,1,8,http://medium.com/,119,0,46
+1750081970994,247,HTTP Request-1,200,OK,Visit Medium Website 2-2,text,true,,41023,112,1,8,https://medium.com/,245,0,141
+1750081971244,191,HTTP Request,200,OK,Visit Medium Website 2-2,text,true,,41681,224,1,2,https://medium.com/,80,0,0
+1750081971244,80,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-2,text,true,,656,112,1,2,http://medium.com/,80,0,0
+1750081971324,111,HTTP Request-1,200,OK,Visit Medium Website 2-2,text,true,,41025,112,1,2,https://medium.com/,107,0,0
+1750081971873,377,HTTP Request,200,OK,Visit Medium Website 2-3,text,true,,41681,224,1,1,https://medium.com/,103,0,37
+1750081971873,103,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-3,text,true,,656,112,1,1,http://medium.com/,103,0,37
+1750081971976,274,HTTP Request-1,200,OK,Visit Medium Website 2-3,text,true,,41025,112,1,1,https://medium.com/,272,0,168
+1750081972253,220,HTTP Request,200,OK,Visit Medium Website 2-3,text,true,,41681,224,1,1,https://medium.com/,49,0,0
+1750081972253,49,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-3,text,true,,656,112,1,1,http://medium.com/,49,0,0
+1750081972302,171,HTTP Request-1,200,OK,Visit Medium Website 2-3,text,true,,41025,112,1,1,https://medium.com/,169,0,0
+1750081972872,422,HTTP Request,200,OK,Visit Medium Website 2-4,text,true,,41664,224,1,1,https://medium.com/,171,0,104
+1750081972872,171,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-4,text,true,,656,112,1,1,http://medium.com/,171,0,104
+1750081973043,251,HTTP Request-1,200,OK,Visit Medium Website 2-4,text,true,,41008,112,1,1,https://medium.com/,248,0,171
+1750081973297,164,HTTP Request,200,OK,Visit Medium Website 2-4,text,true,,41679,224,1,1,https://medium.com/,95,0,0
+1750081973297,95,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-4,text,true,,656,112,1,1,http://medium.com/,95,0,0
+1750081973392,69,HTTP Request-1,200,OK,Visit Medium Website 2-4,text,true,,41023,112,1,1,https://medium.com/,67,0,0
+1750081973872,259,HTTP Request,200,OK,Visit Medium Website 2-5,text,true,,41672,224,1,1,https://medium.com/,80,0,35
+1750081973872,80,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-5,text,true,,656,112,1,1,http://medium.com/,80,0,35
+1750081973952,179,HTTP Request-1,200,OK,Visit Medium Website 2-5,text,true,,41016,112,1,1,https://medium.com/,169,0,84
+1750081974134,164,HTTP Request,200,OK,Visit Medium Website 2-5,text,true,,41664,224,1,1,https://medium.com/,60,0,0
+1750081974134,60,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-5,text,true,,656,112,1,1,http://medium.com/,60,0,0
+1750081974194,104,HTTP Request-1,200,OK,Visit Medium Website 2-5,text,true,,41008,112,1,1,https://medium.com/,102,0,0
+1750081974873,325,HTTP Request,200,OK,Visit Medium Website 2-6,text,true,,41666,224,1,1,https://medium.com/,81,0,35
+1750081974873,81,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-6,text,true,,656,112,1,1,http://medium.com/,81,0,35
+1750081974955,243,HTTP Request-1,200,OK,Visit Medium Website 2-6,text,true,,41010,112,1,1,https://medium.com/,227,0,163
+1750081975202,147,HTTP Request,200,OK,Visit Medium Website 2-6,text,true,,41681,224,1,1,https://medium.com/,81,0,0
+1750081975202,81,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-6,text,true,,656,112,1,1,http://medium.com/,81,0,0
+1750081975283,66,HTTP Request-1,200,OK,Visit Medium Website 2-6,text,true,,41025,112,1,1,https://medium.com/,63,0,0
+1750081975871,467,HTTP Request,200,OK,Visit Medium Website 2-7,text,true,,41666,224,1,1,https://medium.com/,215,0,71
+1750081975871,215,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-7,text,true,,656,112,1,1,http://medium.com/,215,0,71
+1750081976087,251,HTTP Request-1,200,OK,Visit Medium Website 2-7,text,true,,41010,112,1,1,https://medium.com/,249,0,171
+1750081976342,174,HTTP Request,200,OK,Visit Medium Website 2-7,text,true,,41674,224,1,1,https://medium.com/,90,0,0
+1750081976342,90,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-7,text,true,,656,112,1,1,http://medium.com/,90,0,0
+1750081976432,84,HTTP Request-1,200,OK,Visit Medium Website 2-7,text,true,,41018,112,1,1,https://medium.com/,79,0,0
+1750081976872,493,HTTP Request,200,OK,Visit Medium Website 2-8,text,true,,41666,224,1,1,https://medium.com/,211,0,43
+1750081976872,211,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-8,text,true,,656,112,1,1,http://medium.com/,211,0,43
+1750081977083,282,HTTP Request-1,200,OK,Visit Medium Website 2-8,text,true,,41010,112,1,1,https://medium.com/,275,0,197
+1750081977368,147,HTTP Request,200,OK,Visit Medium Website 2-8,text,true,,41681,224,1,1,https://medium.com/,44,0,0
+1750081977368,44,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-8,text,true,,656,112,1,1,http://medium.com/,44,0,0
+1750081977412,103,HTTP Request-1,200,OK,Visit Medium Website 2-8,text,true,,41025,112,1,1,https://medium.com/,101,0,0
+1750081977873,295,HTTP Request,200,OK,Visit Medium Website 2-9,text,true,,41666,224,1,1,https://medium.com/,131,0,38
+1750081977873,131,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-9,text,true,,656,112,1,1,http://medium.com/,131,0,38
+1750081978004,164,HTTP Request-1,200,OK,Visit Medium Website 2-9,text,true,,41010,112,1,1,https://medium.com/,151,0,72
+1750081978171,153,HTTP Request,200,OK,Visit Medium Website 2-9,text,true,,41679,224,1,1,https://medium.com/,74,0,0
+1750081978171,74,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-9,text,true,,656,112,1,1,http://medium.com/,74,0,0
+1750081978245,79,HTTP Request-1,200,OK,Visit Medium Website 2-9,text,true,,41023,112,1,1,https://medium.com/,72,0,0
+1750081978872,354,HTTP Request,200,OK,Visit Medium Website 2-10,text,true,,41666,224,1,1,https://medium.com/,203,0,106
+1750081978872,203,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-10,text,true,,656,112,1,1,http://medium.com/,203,0,106
+1750081979075,151,HTTP Request-1,200,OK,Visit Medium Website 2-10,text,true,,41010,112,1,1,https://medium.com/,149,0,74
+1750081979229,158,HTTP Request,200,OK,Visit Medium Website 2-10,text,true,,41672,224,1,1,https://medium.com/,82,0,0
+1750081979229,82,HTTP Request-0,301,Moved Permanently,Visit Medium Website 2-10,text,true,,656,112,1,1,http://medium.com/,82,0,0
+1750081979311,76,HTTP Request-1,200,OK,Visit Medium Website 2-10,text,true,,41016,112,1,1,https://medium.com/,73,0,0
